@@ -1,0 +1,25 @@
+
+$clr-dark: rgb(11,13,23);
+$clr-light: rgb(208,214,249);
+$clr-white: rgb(255,255,255); 
+
+
+.bg-dark {background-color: $clr-dark;}
+.bg-accent {background-color: $clr-light;}
+.bg-white {background-color: $clr-white;}
+
+.text-dark {color: $clr-dark;}
+.text-accent {color: $clr-light;}
+.text-white {color: $clr-white;}
+
+// ============================================
+// ============================================
+
+body {
+    background-color: $clr-dark;
+    color: $clr-white;
+}
+
+.numbered-title span {
+    color: rgb($clr-white,.25);
+}

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;600;800&family=Barlow:wght@200;300;400;500;600;700;800;900&family=Bellefair&display=swap');
+
+
+:root {
+    --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+    --fs-800: 3.5rem;
+    --fs-700: 1.5rem;
+    --fs-600: 1rem;
+    --fs-500: 1rem;
+    --fs-400: 0.9375rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+}
+
+// $fs-900: clamp(5rem, 5vw + 1rem,  9.375rem);
+// $fs-800: 3.5rem;
+// $fs-700: 1.5rem;
+// $fs-600: 1rem;
+// $fs-500: 1.75rem;
+// $fs-400: 0.9375rem;
+// $fs-300: 1rem;
+// $fs-200: 0.875rem;
+
+// font-family
+$ff-serif: 'Bellefair', serif;
+$ff-sans-cond: 'Barlow Condensed', sans-serif;
+$ff-sans-normal: 'Barlow', sans-serif;
+
+
+// typography
+.ff-serif {font-family: $ff-serif;}
+.ff-sans-cond {font-family: $ff-sans-cond;}
+.ff-sans-normal {font-family: $ff-sans-normal;}
+
+.letter-spacing-1 {letter-spacing: 4.75px;}
+.letter-spacing-2 {letter-spacing: 2.7px;}
+.letter-spacing-3 {letter-spacing: 2.35px;}
+
+.uppercase {text-transform: uppercase;}
+
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200); }
+
+// .fs-900 {font-size: $fs-900;}
+// .fs-800 {font-size: $fs-800;}
+// .fs-700 {font-size: $fs-700;}
+// .fs-600 {font-size: $fs-600;}
+// .fs-500 {font-size: $fs-500;}
+// .fs-400 {font-size: $fs-400;}
+// .fs-300 {font-size: $fs-300;}
+// .fs-200 {font-size: $fs-200;}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+    line-height: 1.1;
+}
+
+// ============================================
+// ============================================
+
+body {
+    font-family: $ff-sans-normal;
+    font-size: var(--fs-400);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+.numbered-title {
+    font-family: $ff-sans-cond;
+    font-size: var(--fs-500);
+    text-transform: uppercase;
+    letter-spacing: 4.72px;
+}
+
+.numbered-title span {
+    margin-right: .5em;
+    font-weight: 700;
+}
+
+.primary-navigation a > span {
+    margin-right: .5em;
+    font-weight: 700;
+}
+
+@media (min-width: 35em) { // 560px // tablet screen sizes
+    :root {
+        --fs-800: 5rem;
+        --fs-700: 2.5rem;
+        --fs-600: 1.5rem;
+        --fs-500: 1.25rem;
+        --fs-400: 1rem;
+    }
+
+    // redefine it so it works
+    // .fs-900 {font-size: $fs-900;}
+    // .fs-800 {font-size: $fs-800;}
+    // .fs-700 {font-size: $fs-700;}
+    // .fs-600 {font-size: $fs-600;}
+    // .fs-400 {font-size: $fs-400;}
+}
+
+
+@media (min-width: 45em) {  // 720px // Desktop screen sizes
+    :root {
+        /* font-sizes */
+        --fs-800: 6.25rem;
+        --fs-700: 3.5rem;
+        --fs-600: 2rem;
+        --fs-500: 1.75rem;
+        --fs-400: 1.125rem;
+    }
+
+    // redefine it so it works
+    // .fs-800 {font-size: $fs-800;}
+    // .fs-700 {font-size: $fs-700;}
+    // .fs-600 {font-size: $fs-600;}
+    // .fs-400 {font-size: $fs-400;}
+}
